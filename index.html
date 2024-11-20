@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hereditary - Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #1c1c1c;
+            color: #fff;
+        }
+        header {
+            background: #000;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        nav .menu {
+            display: flex;
+        }
+        nav a {
+            color: #fff;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #e63946;
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .hero {
+            width: 100%;
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+            max-height: 550px;
+            object-fit: cover;
+        }
+        .genres {
+            background: #2a2a2a;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        .genres span {
+            display: inline-block;
+            background: #2a2a2a;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #2a2a2a;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        .section p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .section ul {
+            padding-left: 20px;
+        }
+        .section li {
+            margin-bottom: 10px;
+        }
+        .gallery {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        .gallery img {
+            width: 30%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .trailer-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #e63946;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .trailer-button:hover {
+            background: #d62839;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            color: #fff;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        @media (max-width: 600px) {
+            .hero img {
+                width: 80%;
+            }
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            .gallery img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#sinopsis">Sinopsis</a>
+            <a href="#elenco">Elenco</a>
+            <a href="#galeria">Galería</a>
+            <a href="#trailer">Trailer</a>
+        </div>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="hero">
+        <img src="https://resenadorescasuales.home.blog/wp-content/uploads/2019/04/100170488-p15108007_v_h10_aa-e1556274982397.jpg?w=1200" alt="Hereditary Logo">
+        <div class="genres">
+            <span>Terror</span>
+            <span>Drama</span>
+            <span>Tensa</span>
+            <span>Pesimista</span>
+        </div>
+    </div>
+
+    <section id="sinopsis" class="section">
+        <h2>Sinopsis</h2>
+        <p>Hereditary es un inquietante thriller psicológico dirigido por Ari Aster que explora la complejidad del duelo, la familia y el legado oscuro que se hereda de generación en generación.
+            La historia comienza con la muerte de Ellen, la matriarca de la familia Graham. Annie, su hija, es una artista que se especializa en la creación de maquetas que reflejan su vida familiar.
+            A medida que Annie y su familia intentan lidiar con la pérdida, comienzan a desenterrar secretos inquietantes sobre su linaje.</p>
+    </section>
+
+    <section id="elenco" class="section">
+        <h2>Elenco Destacado</h2>
+        <ul>
+            <li>Toni Collette como Annie Graham</li>
+            <li>Alex Wolff como Peter Graham</li>
+            <li>Millie Shapiro como Charlie Graham</li>
+            <li>Gabriel Byrne como Steve Graham</li>
+        </ul>
+    </section>
+
+    <section id="galeria" class="section gallery">
+        <h2>Galería</h2>
+        <img src="https://c4.wallpaperflare.com/wallpaper/967/1009/240/milly-shapiro-hereditary-4k-wallpaper-thumb.jpg" alt="Imagen 1">
+        <img src="https://assets.mubicdn.net/images/artworks/416227/images-original.png?1635769532" alt="Imagen 2">
+        <img src="https://www.soundandvision.com/images/1018here.promo.jpg" alt="Imagen 3">
+    </section>
+
+    <section id="trailer" class="section">
+        <h2>Trailer</h2>
+        <p><a class="trailer-button" href="https://youtu.be/yiPvtoNMRa4" target="_blank">Ver Trailer</a></p>
+    </section>
+
+    <section id="contacto" class="section">
+        <h2>Contacto</h2>
+        <p>Para más información, contáctanos a:</p>
+        <p>Email: info@hereditarymovie.com</p>
+        <p>Teléfono: +123 456 7890</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2023 Hereditary. Todos los derechos reservados.</p>
+    <div class="social-icons">
+        <a href="https://twitter.com/Hereditary" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/hereditarymovie/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/hereditarymovie/" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>
